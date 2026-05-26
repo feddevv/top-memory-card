@@ -1,0 +1,26 @@
+.title {
+  -webkit-text-stroke: 1px black;
+  color: var(--color-poke-yellow);
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.4rem);
+  line-height: 2.3;
+  text-align: center;
+}
+
+.title-container {
+  background-color: var(--color-poke-blue);
+}
+
+.score-container {
+  background-color: var(--color-poke-blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.score-container p {
+  font-family: 'Pokemon Solid';
+  -webkit-text-stroke: 1px black;
+  font-size: clamp(0.9rem, 0.5rem + 1vw, 1.2rem);
+  line-height: 1;
+}

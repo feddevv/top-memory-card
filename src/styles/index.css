@@ -1,21 +1,54 @@
 @import url(./fonts.css);
 
+:root {
+  --color-poke-blue: #3b4cca; /* Основний синій для кнопок, контурів, акцентів */
+  --color-poke-blue-dark: #2a3a8c; /* Темно-синій для тіней та активних станів */
+  --color-poke-yellow: #ffcb05; /* Яскравий жовтий для заголовків та рахунку (Score) */
+  --color-poke-gold: #c7a008; /* Темніший жовтий для ховерів або рамок */
+  --color-poke-red: #ee1515; /* Червоний (колір покебола) для повідомлень про програш чи кнопок скидання */
+
+  --color-bg-overlay: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ); /* Напівпрозора скляна плашка під картки (Glassmorphism) */
+  --color-bg-card: #ffffff; /* Чистий білий фон для самих карток із покемонами */
+  --color-text-main: #2c3e50; /* Темний колір для тексту (імена покемонів, правила) */
+  --color-text-light: #ffffff; /* Світлий текст для темних плашок */
+
+  --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* М'яка тінь для карток */
+  --card-border-radius: 16px; /* Закруглення кутів для карток у стилі modern ui */
+  --glass-blur: blur(8px); /* Ефект розмиття заднього фону під меню */
+}
+
 .main-bg img {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    object-position: center;
-    pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
 }
 
 body {
-    font-family: 'Pokemon Hollow', sans-serif;
-    color: white;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: 'Pokemon Hollow', sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Pokemon Solid';
+  margin: 0;
+  padding: 0;
 }
