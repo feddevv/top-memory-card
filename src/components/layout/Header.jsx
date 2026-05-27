@@ -1,4 +1,4 @@
-import '../styles/header.css'
+import '../../styles/layout.css'
 
 export default function Header() {
   return (

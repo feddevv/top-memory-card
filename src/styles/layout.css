@@ -1,3 +1,5 @@
+/* HEADER */
+
 .title {
   -webkit-text-stroke: 1px black;
   color: var(--color-poke-yellow);
@@ -23,4 +25,16 @@
   -webkit-text-stroke: 1px black;
   font-size: clamp(0.9rem, 0.5rem + 1vw, 1.2rem);
   line-height: 1;
+}
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-auto-rows: 270px;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
 }

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import Header from './components/Header.jsx'
+import Header from './components/layout/Header.jsx'
 import { normalizePokes } from './utils/normalizePokes.js'
 import './styles/index.css'
+import Main from './components/layout/Main.jsx'
 
 function App() {
   const [isLoad, setIsLoad] = useState(null)
@@ -22,8 +23,7 @@ function App() {
           const res = await fetch(poke.url)
           const details = await res.json()
 
-          const test = normalizePokes(details)
-          console.log(test)
+          return normalizePokes(details)
         })
 
         const pokemonFullData = await Promise.all(detailPromises)
@@ -37,10 +37,11 @@ function App() {
 
     fetchPokes()
   }, [])
+
   return (
     <>
       <Header />
-      {isLoad && <p>Loading...</p>}
+      <Main pokes={data} isLoad={isLoad} />
     </>
   )
 }

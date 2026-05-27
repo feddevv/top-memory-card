@@ -17,9 +17,9 @@
   --color-text-main: #2c3e50; /* Темний колір для тексту (імена покемонів, правила) */
   --color-text-light: #ffffff; /* Світлий текст для темних плашок */
 
-  --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* М'яка тінь для карток */
+  --card-shadow: 0 0 16px rgba(31, 38, 135, 0.5); /* М'яка тінь для карток */
   --card-border-radius: 16px; /* Закруглення кутів для карток у стилі modern ui */
-  --glass-blur: blur(8px); /* Ефект розмиття заднього фону під меню */
+  --glass-blur: blur(2px); /* Ефект розмиття заднього фону під меню */
 }
 
 .main-bg img {
@@ -32,6 +32,7 @@
   object-fit: cover;
   object-position: center;
   pointer-events: none;
+  filter: var(--glass-blur);
 }
 
 body {
