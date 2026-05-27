@@ -1,6 +1,6 @@
 import '../../styles/layout.css'
 
-export default function Header() {
+export default function Header({ score, bestScore }) {
   return (
     <header>
       <div className="title-container">
@@ -9,10 +9,10 @@ export default function Header() {
 
       <div className="score-container">
         <p>
-          Score: <span>0</span>
+          Score: <span>{score}</span>
         </p>
         <p>
-          Best score: <span>0</span>
+          Best score: <span>{bestScore}</span>
         </p>
       </div>
     </header>
