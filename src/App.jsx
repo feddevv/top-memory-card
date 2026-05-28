@@ -66,10 +66,22 @@ function App() {
       incrementScore(id)
     }
   }
+
+  const handleEnterDown = (e, id) => {
+    if (e.key === 'Enter') {
+      handleCardClick(id)
+    }
+  }
+
   return (
     <>
       <Header score={score} bestScore={bestScore} />
-      <Main pokes={data} isLoad={isLoad} handleCardClick={handleCardClick} />
+      <Main
+        pokes={data}
+        isLoad={isLoad}
+        handleCardClick={handleCardClick}
+        handleEnterDown={handleEnterDown}
+      />
     </>
   )
 }
